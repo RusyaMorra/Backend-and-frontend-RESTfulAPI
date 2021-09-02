@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-md">
+          <div class="row col-12">
+            <h1>add post</h1>
+            <form >
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">title</label>
+                <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
+                
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">text</label>
+                <textarea type="text" class="form-control" id="body"></textarea> 
+              </div>
+           
+              <button type="submit" class="btn btn-primary" onclick="addPost()">Add post</button>
+            </form>
+        </div>  
+        <div class="row col-12">
+            <h1>apdate post</h1>
+            <form >
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">title</label>
+                <input type="text" class="form-control" id="title-edit" aria-describedby="emailHelp">
+                
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">text</label>
+                <textarea type="text" class="form-control" id="body-edit"></textarea> 
+              </div>
+           
+              <button type="submit" class="btn btn-primary" onclick="updatePost()">apdate post</button>
+            </form>
+        </div>  
+        <div class="row post-list">   
+           
+        </div>
+       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
